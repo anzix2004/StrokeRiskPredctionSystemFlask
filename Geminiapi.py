@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # Google Gemini API Key
-GOOGLE_API_KEY = 'AIzaSyCkNiXT_JNr8VoWYXc8s2r27XOakZukQeM'
+GOOGLE_API_KEY = 'YOUR API KEY'
 
 # Configure the Google Gemini API
 genai.configure(api_key=GOOGLE_API_KEY)
@@ -26,4 +26,5 @@ gemini_response = generate_gemini_response(user_message)
 for idx, line in enumerate(gemini_response.split('\n'), start=1):
     line = line.strip()
     if line:
+
         print(f"{idx}. {line}")
